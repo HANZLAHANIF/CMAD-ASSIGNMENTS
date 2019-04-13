@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+</head>
+<body>
+    <form id="form_id">
+        <input type="text" id="your_input" placeholder="Enter to check"/>
+        <input type="button" value="CLick me" id="buttos"/>
+    </form>
+    <script>
+
+    var isPalindrome = function check(a) {
+    if (a === a.split('').reverse().join('')) {
+        alert(a + ' is palindrome.');
+    }
+    else {
+        alert(a + ' is not palindrome.');
+    }
+}
+
+    document.getElementById('buttos').onclick = function() {
+    isPalindrome(document.getElementById('your_input').value);
+        return false;
+    }
+
+
+
+    
+    
+    
+    </script>
+
+
+
+
+
+
+</body>
+</html>
